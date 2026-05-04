@@ -2054,57 +2054,73 @@
   <!-- AOS Library -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    // Initialize AOS animations
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Initialize AOS (only if loaded)
+  if (typeof AOS !== "undefined") {
     AOS.init({
       duration: 800,
       easing: 'ease-out-cubic',
       once: true,
       offset: 60
     });
+  }
 
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  if (navbar) {
     window.addEventListener('scroll', () => {
       navbar.classList.toggle('scrolled', window.scrollY > 60);
     });
+  }
 
-    // Mobile menu
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuClose = document.getElementById('menuClose');
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuClose = document.getElementById('menuClose');
 
+  if (hamburger && mobileMenu) {
     hamburger.addEventListener('click', () => {
       mobileMenu.classList.add('active');
       hamburger.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
     });
+  }
 
+  if (menuClose) {
     menuClose.addEventListener('click', closeMobile);
+  }
 
-    function closeMobile() {
-      mobileMenu.classList.remove('active');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
+  function closeMobile() {
+    mobileMenu?.classList.remove('active');
+    hamburger?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
 
-    // Form submit handler (no backend – shows WhatsApp redirect)
-    document.getElementById('quoteForm').addEventListener('submit', function(e) {
+  // Form handler (SAFE)
+  const form = document.getElementById('quoteForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
       e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const event = document.getElementById('event_type').value;
-      const guests = document.getElementById('guests').value;
-      const date = document.getElementById('event_date').value;
+
+      const name = document.getElementById('name')?.value.trim();
+      const phone = document.getElementById('phone')?.value.trim();
+      const event = document.getElementById('event_type')?.value;
+      const guests = document.getElementById('guests')?.value;
+      const date = document.getElementById('event_date')?.value;
 
       if (!name || !phone || !event || !guests || !date) {
         alert('Please fill in all required fields.');
         return;
       }
 
-      // Send as WhatsApp message
       const msg = `Hello Shree Caterers! I'd like a quote for my event.%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Event:* ${encodeURIComponent(event)}%0A*Guests:* ${encodeURIComponent(guests)}%0A*Date:* ${encodeURIComponent(date)}`;
+
       window.open(`https://wa.me/919967683584?text=${msg}`, '_blank');
     });
-  </script>
+  }
+
+});
+</script>
 </body>
 </html>
