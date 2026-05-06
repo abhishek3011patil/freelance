@@ -8,7 +8,6 @@
   <meta name="description" content="Shree Caterers & Decorators – Premium Wedding Catering & Event Decoration in Navi Mumbai. Expert catering for 100–1000+ guests. Call now for custom quote!" />
   <meta name="keywords" content="Catering Services Navi Mumbai, Wedding Catering Navi Mumbai, Event Catering Navi Mumbai, Caterers Ulwe, Caterers Panvel, Decoration Navi Mumbai" />
   <meta name="robots" content="index, follow" />
-  <link rel="icon" type="image/x-icon" href="logo.png">
   <link rel="canonical" href="https://shreecaterers.in/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Shree Caterers & Decorators | Best Catering in Navi Mumbai" />
@@ -17,6 +16,41 @@
   <meta property="og:url" content="https://shreecaterers.in/" />
   <meta property="og:locale" content="en_IN" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Shree Caterers & Decorators","url":"https://shreecaterers.in","telephone":"+919967683584","email":"shreecatring60@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Shop No 2, Tulsa Namdev Residency, Sector 17, Ulwe, Kharkopar","addressLocality":"Navi Mumbai","addressRegion":"Maharashtra","postalCode":"410206","addressCountry":"IN"},"openingHours":"Mo-Su 10:00-22:00","servesCuisine":"Indian","priceRange":"₹₹"}</script>
+  <!-- FAQ Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What is the minimum number of guests you cater for?","acceptedAnswer":{"@type":"Answer","text":"We specialize in events with 100 or more guests. Whether it's 100 or 1000+, we have the staff and equipment to handle it seamlessly."}},
+      {"@type":"Question","name":"What is your starting price per plate?","acceptedAnswer":{"@type":"Answer","text":"Our catering packages start from ₹400 per plate for the Regular Menu. Premium and VIP packages are also available with more dishes and variety."}},
+      {"@type":"Question","name":"Do you provide decoration services too?","acceptedAnswer":{"@type":"Answer","text":"Yes! We offer complete decoration including floral arrangements, draping, ambient lighting, stage setup, and themed décor for all types of events."}},
+      {"@type":"Question","name":"How far in advance should I book?","acceptedAnswer":{"@type":"Answer","text":"We recommend booking at least 4–6 weeks in advance, especially for wedding season (October–February) when dates fill up fast."}},
+      {"@type":"Question","name":"Do you offer customized menus?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. All our menus are fully customizable. You can mix and match dishes from our Regular, Premium, and VIP packages based on your preferences and budget."}},
+      {"@type":"Question","name":"What areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"We serve Ulwe, Panvel, Kharghar, Belapur, Vashi, Nerul, Airoli and all surrounding Navi Mumbai areas."}},
+      {"@type":"Question","name":"Is the food prepared fresh on the day?","acceptedAnswer":{"@type":"Answer","text":"Yes. All dishes are prepared fresh on the day of your event using quality ingredients. We follow strict food safety and hygiene standards throughout."}},
+      {"@type":"Question","name":"Do you provide serving staff?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our trained staff in uniforms handle setup, serving, and post-event cleanup so you can enjoy your day stress-free."}}
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What is the minimum number of guests?","acceptedAnswer":{"@type":"Answer","text":"We specialize in events with 100 or more guests, up to 1000+."}},
+      {"@type":"Question","name":"What is your price per plate?","acceptedAnswer":{"@type":"Answer","text":"Packages start from \u20b9600 per plate for the Regular Menu."}},
+      {"@type":"Question","name":"Do you provide decoration services?","acceptedAnswer":{"@type":"Answer","text":"Yes — floral, draping, lighting, stage and themed d\u00e9cor."}},
+      {"@type":"Question","name":"How far in advance should I book?","acceptedAnswer":{"@type":"Answer","text":"At least 4\u20136 weeks in advance; earlier during wedding season."}},
+      {"@type":"Question","name":"Do you offer customized menus?","acceptedAnswer":{"@type":"Answer","text":"Yes, all menus are fully customizable across Regular, Premium and VIP tiers."}},
+      {"@type":"Question","name":"What areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"Ulwe, Panvel, Kharghar, Belapur, Vashi, Nerul, Airoli and surrounding Navi Mumbai areas."}},
+      {"@type":"Question","name":"Is the food freshly prepared?","acceptedAnswer":{"@type":"Answer","text":"Yes, 100% fresh on the event day with strict hygiene standards."}},
+      {"@type":"Question","name":"Do you provide staff and cleanup?","acceptedAnswer":{"@type":"Answer","text":"Yes, uniformed staff handle setup, serving and full post-event cleanup."}}
+    ]
+  }
+  </script>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -324,7 +358,85 @@
       margin-top: 12px;
       letter-spacing: 0.03em;
     }
+
+    /* Form feedback */
+    .form-response{display:none;padding:14px 18px;border-radius:var(--radius);font-family:'Montserrat',sans-serif;font-size:.82rem;font-weight:600;margin-bottom:16px;text-align:center}
+    .form-response.success{display:block;background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.4);color:#14803c}
+    .form-response.error{display:block;background:rgba(220,53,69,.08);border:1px solid rgba(220,53,69,.3);color:#a0001e}
+    .form-submit:disabled{opacity:.65;cursor:not-allowed;transform:none!important}
+
+    /* ================================
+       FAQ SECTION
+    ================================ */
+    #faq{padding:100px 0;background:var(--cream-dark)}
+    .faq-header{text-align:center;margin-bottom:60px}
+    .faq-header .section-divider{margin:20px auto 0}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:1100px;margin:0 auto}
+    .faq-item{background:var(--white);border:1px solid rgba(201,168,76,.15);border-radius:var(--radius);overflow:hidden;transition:box-shadow var(--transition)}
+    .faq-item:hover{box-shadow:0 8px 32px rgba(0,0,0,.08)}
+    .faq-question{width:100%;background:none;border:none;padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;text-align:left;transition:background var(--transition);-webkit-tap-highlight-color:transparent}
+    .faq-question:hover{background:rgba(201,168,76,.04)}
+    .faq-question[aria-expanded="true"]{background:rgba(201,168,76,.06)}
+    .faq-q-text{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--maroon-dark);line-height:1.4}
+    .faq-icon{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,rgba(201,168,76,.15),rgba(201,168,76,.08));border:1px solid rgba(201,168,76,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform var(--transition),background var(--transition)}
+    .faq-icon svg{width:14px;height:14px;fill:none;stroke:var(--gold-dark);stroke-width:2.5;stroke-linecap:round;transition:transform var(--transition)}
+    .faq-question[aria-expanded="true"] .faq-icon{background:linear-gradient(135deg,var(--gold),var(--gold-dark));border-color:var(--gold)}
+    .faq-question[aria-expanded="true"] .faq-icon svg{stroke:#fff;transform:rotate(45deg)}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1),padding .3s ease}
+    .faq-answer.open{max-height:400px}
+    .faq-answer-inner{padding:0 28px 22px;font-size:.98rem;color:var(--text-mid);line-height:1.8;border-top:1px solid rgba(201,168,76,.1)}
+    .faq-answer-inner a{color:var(--gold-dark);font-weight:600;text-decoration:underline}
+    .faq-answer-inner strong{color:var(--maroon-dark)}
+    /* Schema badge */
+    .faq-cta-row{text-align:center;margin-top:48px}
+    .faq-cta-row p{font-size:1rem;color:var(--text-mid);margin-bottom:20px}
+    @media(max-width:768px){
+      .faq-grid{grid-template-columns:1fr}
+      .faq-q-text{font-size:.95rem}
+      .faq-question{padding:18px 20px}
+      .faq-answer-inner{padding:0 20px 18px}
+    }
   </style>
+
+  <!-- FAQ Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What is the minimum number of guests you cater for?","acceptedAnswer":{"@type":"Answer","text":"We specialize in events with 100 or more guests. Whether it's 100 or 1000+, we have the staff and equipment to handle it seamlessly."}},
+      {"@type":"Question","name":"What is your starting price per plate?","acceptedAnswer":{"@type":"Answer","text":"Our catering packages start from ₹400 per plate for the Regular Menu. Premium and VIP packages are also available with more dishes and variety."}},
+      {"@type":"Question","name":"Do you provide decoration services too?","acceptedAnswer":{"@type":"Answer","text":"Yes! We offer complete decoration including floral arrangements, draping, ambient lighting, stage setup, and themed décor for all types of events."}},
+      {"@type":"Question","name":"How far in advance should I book?","acceptedAnswer":{"@type":"Answer","text":"We recommend booking at least 4–6 weeks in advance, especially for wedding season (October–February) when dates fill up fast. Early booking also helps with menu customization."}},
+      {"@type":"Question","name":"Do you offer customized menus?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. All our menus are fully customizable. You can mix and match dishes from our Regular, Premium, and VIP packages based on your preferences and budget."}},
+      {"@type":"Question","name":"What areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"We primarily serve Navi Mumbai including Ulwe, Panvel, Kharghar, Belapur, Vashi, and surrounding areas. Contact us for outstation enquiries."}},
+      {"@type":"Question","name":"Is the food prepared fresh on the day?","acceptedAnswer":{"@type":"Answer","text":"Yes. All dishes are prepared fresh on the day of your event using quality ingredients. We follow strict food safety and hygiene standards throughout."}},
+      {"@type":"Question","name":"Do you provide serving staff?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our trained staff in uniforms handle setup, serving, and post-event cleanup so you can enjoy your day stress-free."}}
+    ]
+  }
+
+    // ── FAQ Accordion ─────────────────────────────────────────────────────────
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        const answerId = this.getAttribute('aria-controls');
+        const answer   = document.getElementById(answerId);
+
+        // Close all others in same grid
+        document.querySelectorAll('.faq-question').forEach(function(b) {
+          b.setAttribute('aria-expanded', 'false');
+          const a = document.getElementById(b.getAttribute('aria-controls'));
+          if (a) a.classList.remove('open');
+        });
+
+        // Toggle current
+        if (!expanded) {
+          this.setAttribute('aria-expanded', 'true');
+          answer.classList.add('open');
+        }
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -348,6 +460,7 @@
     <a href="#gallery" onclick="closeMobile()">Gallery</a>
     <a href="#services" onclick="closeMobile()">Services</a>
     <a href="#menu" onclick="closeMobile()">Menu</a>
+    <a href="#faq" onclick="closeMobile()">FAQ</a>
     <a href="#contact" onclick="closeMobile()">Get Quote</a>
   </nav>
 
@@ -365,6 +478,7 @@
           <a href="#services">Services</a>
           <a href="#menu">Menu</a>
           <a href="#why">Why Us</a>
+          <a href="#faq">FAQ</a>
         </nav>
         <a href="#contact" class="nav-cta">Get Quote</a>
         <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
@@ -619,6 +733,11 @@
               <div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" /></div>
               <div class="form-group"><label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX" required autocomplete="tel" /></div>
             </div>
+            <!-- Row 1b: Email (optional) -->
+            <div class="form-group">
+              <label for="email">Email Address <span style="opacity:.55;font-weight:400">(optional — for confirmation)</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+            </div>
             <!-- Row 2: Event Type + Event Date -->
             <div class="form-row">
               <div class="form-group"><label for="event_type">Event Type *</label><select id="event_type" name="event_type" required><option value="" disabled selected>Select event type</option><option value="wedding">Wedding</option><option value="reception">Reception</option><option value="engagement">Engagement</option><option value="birthday">Birthday Party</option><option value="corporate">Corporate Event</option><option value="other">Other</option></select></div>
@@ -633,11 +752,122 @@
               <div class="form-group"><label for="budget">Budget Range *</label><select id="budget" name="budget" required><option value="" disabled selected>Select budget</option><option value="under-1L">Under ₹1 Lakh</option><option value="1L-2L">₹1 – 2 Lakh</option><option value="2L-5L">₹2 – 5 Lakh</option><option value="5L-10L">₹5 – 10 Lakh</option><option value="above-10L">Above ₹10 Lakh</option></select></div>
             </div>
             <!-- Submit -->
-            <button type="submit" class="form-submit">✦ Get My Free Quote Now</button>
+            <div id="formResponse" class="form-response" aria-live="polite"></div>
+            <button type="submit" class="form-submit" id="formSubmitBtn">✦ Get My Free Quote Now</button>
             <p class="form-trust-note">🔒 Your details are 100% private. We respond within 2 hours.</p>
           </form>
         </div>
       </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="faq-header" data-aos="fade-up">
+        <span class="section-tag">Got Questions?</span>
+        <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="faq-grid">
+
+        <!-- Q1 -->
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a1">
+            <span class="faq-q-text">What is the minimum number of guests you cater for?</span>
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a1" role="region">
+            <div class="faq-answer-inner">We specialize in events with <strong>100 or more guests</strong>. Whether it's an intimate gathering of 100 or a grand wedding of 1000+, our team has the staff, equipment, and experience to handle it seamlessly.</div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="60">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a2">
+            <span class="faq-q-text">What is your starting price per plate?</span>
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a2" role="region">
+            <div class="faq-answer-inner">Our catering packages start from <strong>₹400 per plate</strong> for the Regular Menu. Premium and VIP packages are also available with more dishes, variety, and presentation upgrades. Contact us for a custom quote.</div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
+            <span class="faq-q-text">Do you provide decoration services too?</span>
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a3" role="region">
+            <div class="faq-answer-inner">Yes! We offer <strong>complete decoration services</strong> including floral arrangements, draping, ambient lighting, stage setup, and fully themed décor to transform any venue into a stunning space.</div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="60">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a4">
+            <span class="faq-q-text">How far in advance should I book?</span>
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a4" role="region">
+            <div class="faq-answer-inner">We recommend booking at least <strong>4–6 weeks in advance</strong>. During peak wedding season (October–February) dates fill up very fast. Early booking also gives you more time for menu customization.</div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a5">
+            <span class="faq-q-text">Do you offer customized menus?</span>
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a5" role="region">
+            <div class="faq-answer-inner">Absolutely. <strong>All our menus are fully customizable.</strong> You can mix and match dishes from our Regular, Premium, and VIP packages based on your taste preferences, dietary needs, and budget.</div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="60">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a6">
+            <span class="faq-q-text">What areas do you serve in Navi Mumbai?</span>
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a6" role="region">
+            <div class="faq-answer-inner">We serve <strong>Ulwe, Panvel, Kharghar, Belapur, Vashi, Nerul, Airoli</strong> and all surrounding Navi Mumbai areas. For outstation or Mumbai city enquiries, please <a href="#contact">contact us directly</a>.</div>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a7">
+            <span class="faq-q-text">Is the food freshly prepared on the event day?</span>
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a7" role="region">
+            <div class="faq-answer-inner">Yes, <strong>100% fresh preparation</strong> on the day of your event. We use quality ingredients and follow strict food safety & hygiene standards throughout cooking, transport, and serving.</div>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="60">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a8">
+            <span class="faq-q-text">Do you provide serving staff and handle cleanup?</span>
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a8" role="region">
+            <div class="faq-answer-inner">Yes. Our <strong>trained, uniformed staff</strong> manage setup, food service, and post-event cleanup completely. You and your family can enjoy the event stress-free without worrying about logistics.</div>
+          </div>
+        </div>
+
+      </div><!-- /faq-grid -->
+
+      <div class="faq-cta-row" data-aos="fade-up">
+        <p>Still have questions? We're happy to help.</p>
+        <a href="https://wa.me/919967683584?text=Hello%2C%20I%20have%20a%20question%20about%20catering." class="btn-whatsapp" target="_blank" rel="noopener"><i class="fa fa-whatsapp"></i> Ask on WhatsApp</a>
+      </div>
+
     </div>
   </section>
 
@@ -711,18 +941,84 @@
     hamburger.addEventListener('click',()=>{mobileMenu.classList.add('active');hamburger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden'});
     menuClose.addEventListener('click',closeMobile);
     function closeMobile(){mobileMenu.classList.remove('active');hamburger.setAttribute('aria-expanded','false');document.body.style.overflow=''}
-    document.getElementById('quoteForm').addEventListener('submit',function(e){
+    // ── Quote Form — AJAX → PHP mailer ──────────────────────────────────────
+    document.getElementById('quoteForm').addEventListener('submit', async function(e) {
       e.preventDefault();
-      const name=document.getElementById('name').value.trim(),phone=document.getElementById('phone').value.trim(),event=document.getElementById('event_type').value,guests=document.getElementById('guests').value,date=document.getElementById('event_date').value,budget=document.getElementById('budget').value;
-      if(!name||!phone||!event||!guests||!date||!budget){alert('Please fill in all required fields.');return}
-      const msg=`Hello Shree Caterers! I'd like a quote for my event.%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Event:* ${encodeURIComponent(event)}%0A*Guests:* ${encodeURIComponent(guests)}%0A*Date:* ${encodeURIComponent(date)}%0A*Budget:* ${encodeURIComponent(budget)}`;
-      window.open(`https://wa.me/919967683584?text=${msg}`,'_blank')
+
+      const btn      = document.getElementById('formSubmitBtn');
+      const response = document.getElementById('formResponse');
+
+      // Basic client-side validation
+      const fields = ['name','phone','event_type','event_date','guests','budget'];
+      for (const id of fields) {
+        if (!document.getElementById(id).value.trim()) {
+          showResponse('error', '⚠️ Please fill in all required fields.');
+          return;
+        }
+      }
+
+      // Loading state
+      btn.disabled    = true;
+      btn.textContent = '⏳ Sending…';
+      response.className = 'form-response';
+      response.style.display = 'none';
+
+      try {
+        const formData = new FormData(this);
+        const res  = await fetch('send_quote.php', { method: 'POST', body: formData });
+        const data = await res.json();
+
+        if (data.success) {
+          showResponse('success', '✅ ' + data.message);
+          this.reset();
+          // Also open WhatsApp as bonus channel
+          if (data.whatsapp) {
+            setTimeout(() => window.open(data.whatsapp, '_blank'), 800);
+          }
+        } else {
+          showResponse('error', '❌ ' + (data.message || 'Something went wrong. Please try again.'));
+        }
+      } catch (err) {
+        showResponse('error', '❌ Network error. Please call us at +91 9967683584.');
+      } finally {
+        btn.disabled    = false;
+        btn.textContent = '✦ Get My Free Quote Now';
+      }
     });
+
+    function showResponse(type, msg) {
+      const el = document.getElementById('formResponse');
+      el.className   = 'form-response ' + type;
+      el.textContent = msg;
+      el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
     (function(){var s=document.getElementById('aboutStats');if(!s)return;var counted=false;function animateCounter(el){var target=parseFloat(el.getAttribute('data-target')),suffix=el.getAttribute('data-suffix')||'',decimals=parseInt(el.getAttribute('data-decimals')||'0'),steps=Math.ceil(1600/16),increment=target/steps,current=0;var timer=setInterval(function(){current+=increment;if(current>=target){current=target;clearInterval(timer)}el.textContent=current.toFixed(decimals)+suffix},16)}
     new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting&&!counted){counted=true;document.querySelectorAll('.counter').forEach(animateCounter)}})},{threshold:.35}).observe(s)})();
     (function(){var slides=document.getElementById('tSlides'),dotsContainer=document.getElementById('tDots'),prevBtn=document.getElementById('tPrev'),nextBtn=document.getElementById('tNext');if(!slides)return;var total=slides.children.length,current=0,autoTimer;for(var i=0;i<total;i++){(function(idx){var dot=document.createElement('button');dot.className='carousel-dot'+(idx===0?' active':'');dot.setAttribute('aria-label','Review '+(idx+1));dot.addEventListener('click',function(){goTo(idx)});dotsContainer.appendChild(dot)})(i)}
     function goTo(idx){current=((idx%total)+total)%total;slides.style.transform='translateX(-'+(current*100)+'%)';var dots=dotsContainer.querySelectorAll('.carousel-dot');dots.forEach(function(d,i){d.classList.toggle('active',i===current)});clearInterval(autoTimer);autoTimer=setInterval(function(){goTo(current+1)},5500)}
     prevBtn.addEventListener('click',function(){goTo(current-1)});nextBtn.addEventListener('click',function(){goTo(current+1)});autoTimer=setInterval(function(){goTo(current+1)},5500)})();
+
+    // ── FAQ Accordion ─────────────────────────────────────────────────────────
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        const answerId = this.getAttribute('aria-controls');
+        const answer   = document.getElementById(answerId);
+
+        // Close all others in same grid
+        document.querySelectorAll('.faq-question').forEach(function(b) {
+          b.setAttribute('aria-expanded', 'false');
+          const a = document.getElementById(b.getAttribute('aria-controls'));
+          if (a) a.classList.remove('open');
+        });
+
+        // Toggle current
+        if (!expanded) {
+          this.setAttribute('aria-expanded', 'true');
+          answer.classList.add('open');
+        }
+      });
+    });
   </script>
 </body>
 </html>
