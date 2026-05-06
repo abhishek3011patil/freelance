@@ -11,7 +11,7 @@
 // ─── CONFIGURATION ──────────────────────────────────────────────────────────
 define('TO_EMAIL',    'shreecatring60@gmail.com');   // Where enquiries go
 define('TO_NAME',     'Shree Caterers & Decorators');
-define('FROM_EMAIL',  'noreply@shreecatering.in');   // Must match your domain
+define('FROM_EMAIL',  'infogit @shreecatering.in');   // Must match your domain
 define('FROM_NAME',   'Shree Caterers Website');
 define('SITE_NAME',   'Shree Caterers & Decorators');
 define('WHATSAPP_NO', '919967683584');
