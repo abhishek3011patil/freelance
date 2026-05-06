@@ -592,8 +592,8 @@
         <div class="section-divider"></div>
       </div>
       <div class="services-grid">
-        <article class="service-card" data-aos="fade-up" data-aos-delay="0"><div class="service-icon">💍</div><h3>Wedding Catering (100–1000+ Guests)</h3><p>Complete wedding catering services in Navi Mumbai tailored for large gatherings. We handle everything from welcome drinks to desserts, ensuring an unforgettable dining experience for your guests.</p></article>
-        <article class="service-card" data-aos="fade-up" data-aos-delay="80"><div class="service-icon">💐</div><h3>Engagement &amp; Reception Catering</h3><p>Elegant food setups for engagement ceremonies and reception banquets. Our curated menus and stylish presentation elevate every milestone moment with exceptional culinary quality.</p></article>
+        <article class="service-card" data-aos="fade-up" data-aos-delay="0"><div class="service-icon">💐</div><h3>Wedding Catering (100–1000+ Guests)</h3><p>Complete wedding catering services in Navi Mumbai tailored for large gatherings. We handle everything from welcome drinks to desserts, ensuring an unforgettable dining experience for your guests.</p></article>
+        <article class="service-card" data-aos="fade-up" data-aos-delay="80"><div class="service-icon">💍</div><h3>Engagement &amp; Reception Catering</h3><p>Elegant food setups for engagement ceremonies and reception banquets. Our curated menus and stylish presentation elevate every milestone moment with exceptional culinary quality.</p></article>
         <article class="service-card" data-aos="fade-up" data-aos-delay="160"><div class="service-icon">🎂</div><h3>Birthday &amp; Private Events</h3><p>From intimate birthday parties to private celebrations, we deliver personalized catering packages that match your vision and guest count without compromise on taste or presentation.</p></article>
         <article class="service-card" data-aos="fade-up" data-aos-delay="240"><div class="service-icon">✨</div><h3>Decoration &amp; Lighting Setup</h3><p>Stunning event décor including floral arrangements, draping, ambient lighting, stage decoration, and themed setups that transform any venue into a magical, memorable space.</p></article>
         <article class="service-card" data-aos="fade-up" data-aos-delay="320"><div class="service-icon">🎪</div><h3>Complete Event Management</h3><p>End-to-end event management covering planning, vendor coordination, on-site execution, and post-event cleanup — so you can enjoy your special day completely stress-free.</p></article>
@@ -960,7 +960,7 @@
 
       try {
         const formData = new FormData(this);
-        const res  = await fetch('send_quote.php', { method: 'POST', body: formData });
+        const res  = await fetch('php/send_quote.php', { method: 'POST', body: formData });
         const data = await res.json();
 
         if (data.success) {
